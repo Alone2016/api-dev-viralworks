@@ -70,11 +70,12 @@
     "socket.io": "^2.1.1",
     "tsconfig-paths": "^3.5.0",
     "zone.js": "^0.8.26"
-  },
-  "devDependencies": {
-    "@types/bull": "^3.5.14",
+      "@types/bull": "^3.5.14",
     "nodemon": "^1.18.3",
     "ts-node": "^7.0.0",
     "typescript": "^3.0.1"
+  },
+  "devDependencies": {
+  
   }
 }
