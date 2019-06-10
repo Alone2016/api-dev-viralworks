@@ -16,10 +16,10 @@ export const config: Config = {
     },
     server: {
         host: process.env.SERVER_HOST || '127.0.0.1',
-        port: normalize(process.env.SERVER_PORT || 8080),
+        port: normalize(process.env.PORT || process.env.SERVER_PORT || 8080),
         public: {
             host: process.env.SERVER_PUBLIC_HOST || process.env.SERVER_HOST || '127.0.0.1',
-            port: normalize(process.env.SERVER_PUBLIC_PORT || 8080)
+            port: normalize(process.env.PORT || process.env.SERVER_PUBLIC_PORT || 8080)
         },
         scheme: process.env.SERVER_SCHEMA || 'http',
         cors_allow_origin: process.env.CORS_ALLOW_ORIGIN || 'null'
